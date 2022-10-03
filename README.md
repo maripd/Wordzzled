@@ -8,10 +8,10 @@
 
 ![Image 1](https://i.imgur.com/rjIrTEo.png)
 
-### **Description**
+##### **Description**
 
-### This is a word guessing game. Player will have to guess what the word is. If the player makes an incorrect letter choice, 1 point will be deducted out of 5 given chances. If letter choice is correct, the letter will be displayed. If player guesses the correct word without using up all 5 chances, the player wins. If player uses up all 5 chances and have not guessed the word, then the game is over.
+##### This is a word guessing game. Player will have to guess what the word is. If the player makes an incorrect letter choice, 1 point will be deducted out of 5 given chances. If letter choice is correct, the letter will be displayed. If player guesses the correct word without using up all 5 chances, the player wins. If player uses up all 5 chances and have not guessed the word, then the game is over.
 
-## Credit:
+### Credit:
 
-### Markdown Cheatsheet: [Github] (github.com)
+##### Markdown Cheatsheet: [Github] (github.com)
