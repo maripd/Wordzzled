@@ -14,4 +14,4 @@
 
 ### Credit:
 
-##### Markdown Cheatsheet: [Github] (github.com)
+##### Markdown Cheatsheet: [Github](github.com)
