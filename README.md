@@ -2,7 +2,7 @@
 
 #### Date Started: October 1, 2022
 
-#### \*By: Marissa Dilig\*\*
+#### By: Marissa Dilig
 
 ## [My Github](https://github.com/maripd) | [My Linkedin](https://www.linkedin.com/in/marissa-dilig-6ba71923a/) | [Trello](https://trello.com/b/78Bt7G4o/wordzzled)
 
