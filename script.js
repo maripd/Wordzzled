@@ -1,42 +1,65 @@
-///////////////////////////////////////////////////////////Global scope
-
 let lifeCount = 5
-const player = null
-const computer = null
-
 let userInputArray = []
 
 const headerText = document.getElementById('header-text')
 const submitBtn = document.querySelector('#submit-btn')
 const playGameBtn = document.querySelector('#playgame-btn')
 const inputContainer = document.querySelector('.input-container')
+const letterInput = document.querySelector('#letter-input')
 
-const wordArray = ['cat', 'dog', 'rat', 'fox']
+const wordArray = ['cat', 'aadvark', 'mice', 'fox']
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
-
-/////////////////////////////////////////////////////////////Functions
-
-const getUserInput = () => {
-  headerText.innerText = randomWord
-  const letterInput = document.querySelector('#letter-input')
-  let userInputValue = letterInput.value
-
-  if (randomWord.includes(userInputValue) && userInputValue.length > 0) {
-    userInputArray.push(userInputValue)
-    const pElement = document.createElement('p')
-    pElement.innerText = userInputValue
-    document.querySelector('.input-container').append(pElement)
-    let joinLetters = userInputArray.join('')
-    letterInput.value = ''
-    console.log(joinLetters)
+console.log(randomWord)
+/////////////////////////////////////////////////////////// Global Scope
+const createBoxes = () => {
+  const wordBox = document.querySelector('#word-box')
+  for (let i = 0; i < randomWord.length; i++) {
+    const div = document.createElement('div')
+    div.className = 'letter-box'
+    wordBox.append(div)
   }
 }
-getUserInput()
+createBoxes()
+
+const checkLetter = () => {
+  let userInputValue = letterInput.value
+  let letterBoxes = document.querySelectorAll('.letter-box')
+  let letterIndices = []
+
+  if (randomWord.includes(userInputValue) === true) {
+    //if answer is right empty headertext
+    headerText.innerText = ''
+    //given input letter, find index of matching letter of randomWord
+    //console.log(randomWord.indexOf(userInputValue))
+    //given the index, show letter in the corresponding box index
+    //const letterIndex = randomWord.indexOf(userInputValue)
+    //letterBoxes[letterIndex].innerText = userInputValue
+
+    for (let i = 0; i < randomWord.length; i++) {
+      if (randomWord[i] === userInputValue) {
+        letterBoxes[i].innerText = userInputValue
+        userInputArray.push(userInputValue)
+        letterInput.value = ''
+      }
+      if (randomWord.length === userInputArray.length) {
+        headerText.innerText = 'You win!'
+        letterInput.value = ''
+      }
+    }
+  } else {
+    lifeCount -= 1
+    headerText.innerText = 'Try again'
+    console.log('does not exist', userInputValue)
+    if (lifeCount < 1) {
+      headerText.innerText = 'Game over'
+    }
+  }
+  letterInput.value = ''
+}
 
 const playGame = () => {
   location.reload()
 }
-
 /////////////////////////////////////////////////////////////Event Listeners
-submitBtn.addEventListener('click', getUserInput)
+submitBtn.addEventListener('click', checkLetter)
 playGameBtn.addEventListener('click', playGame)
