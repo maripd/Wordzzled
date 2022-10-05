@@ -7,6 +7,7 @@ const submitBtn = document.querySelector('#submit-btn')
 const playGameBtn = document.querySelector('#playgame-btn')
 const inputContainer = document.querySelector('.input-container')
 const letterInput = document.querySelector('#letter-input')
+let lifeCountText = document.querySelector('.lifecount')
 headerText.innerText = 'WORDZZLED'
 const wordArray = [
   'wavelength',
@@ -67,6 +68,7 @@ const checkLetter = () => {
     }
   } else {
     lifeCount -= 1
+    lifeCountText.innerText = lifeCount
     headerText.innerText = 'Try again'
     console.log('does not exist', userInputValue)
     if (lifeCount < 1) {

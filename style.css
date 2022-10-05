@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "scratchman";
+  src: url("scratchmandafont.otf");
+}
+
 body {
   background-color: rgb(240, 249, 250);
 }
@@ -95,4 +100,23 @@ body {
   justify-content: center;
   color:rgb(209, 153, 11);
   font-family: 'Bungee Spice';
+}
+
+.life-img {
+  width: 40px;
+  height: 40px;
+}
+
+.lifecount {
+  flex-direction: row-reverse;
+  border: 2px solid rgb(237, 136, 47);
+  padding: 10px 10px;
+  margin: 0 10px;
+  border-radius: 4px;
+  color:rgb(21, 81, 142);
+  font-weight: 800;
+}
+
+#lifecount-box {
+  display: flex;
 }
