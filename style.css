@@ -2,17 +2,22 @@ body {
   background-color: rgb(240, 249, 250);
 }
 
+.button-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
 #submit-btn {
-  flex-direction: row;
-  text-align: center;
-  line-height: 1em;
-  margin: 40px 20px;
+  margin: 0 auto;
+  width: 50px;
   height: 30px;
-  width: 60px;
   background-color: rgb(227, 242, 246);
   border: 3px solid rgb(21, 81, 142);
   color: rgb(242, 184, 102);
   font-weight: bold;
+  border-radius: 5px;
 }
 
 
@@ -20,16 +25,13 @@ body {
   background-color: rgb(252, 232, 204);
 }
 
-#submit-btn:active {
-  border-color: 21, 81, 142;
-}
-
 #letter-input {
-  margin: 20px 20px;
+  font-family: 'Bungee Spice';
+  margin: 20px auto;
   border: 3px solid rgb(197, 236, 250);
   background-color: rgb(227, 242, 246);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   font-size: 40px;
   text-align: center;
   color: rgb(242, 184, 102);
@@ -51,6 +53,16 @@ body {
   padding: 10px 20px;
   border: 3px solid rgb(21, 81, 142);
   font-weight: bolder;
+  border-radius: 55%;
+  width: 50px;
+  height: 50px;
+}
+
+.refresh-img {
+  position: relative;
+  right: 13px;
+  bottom: 3px;
+  width: 30px;
 }
 
 #header-text {
@@ -64,18 +76,14 @@ body {
   background-color: rgb(227, 242, 246);
 }
 
-.button-input-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-}
+
 
 #word-box {
   display: flex;
- 
   justify-content: center;
 }
+
+
 .letter-box {
   border: 3px solid rgb(248, 163, 59);
   width: 50px;

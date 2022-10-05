@@ -27,7 +27,8 @@ const wordArray = [
   'winter',
   'autumn',
   'ball',
-  'shovel'
+  'shovel',
+  'hammer'
 ]
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
 console.log(randomWord)
@@ -70,6 +71,9 @@ const checkLetter = () => {
     console.log('does not exist', userInputValue)
     if (lifeCount < 1) {
       headerText.innerText = 'Game over'
+      letterInput.value = ''
+      for (let i = 0; i < randomWord.length; i++)
+        letterBoxes[i].innerText = randomWord[i]
     }
   }
   letterInput.value = ''
