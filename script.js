@@ -1,3 +1,4 @@
+/////////////////////////////////////////////////////////// Global Scope
 let lifeCount = 5
 let userInputArray = []
 
@@ -6,11 +7,19 @@ const submitBtn = document.querySelector('#submit-btn')
 const playGameBtn = document.querySelector('#playgame-btn')
 const inputContainer = document.querySelector('.input-container')
 const letterInput = document.querySelector('#letter-input')
-
-const wordArray = ['cat', 'aadvark', 'mice', 'fox']
+headerText.innerText = 'WORDZZLED'
+const wordArray = [
+  'wavelength',
+  'epidermal',
+  'aadvark',
+  'onomatopoeia',
+  'anemone',
+  'quinoa',
+  'pharaoh'
+]
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
 console.log(randomWord)
-/////////////////////////////////////////////////////////// Global Scope
+////////////////////////////////////////////////////////////////// functions
 const createBoxes = () => {
   const wordBox = document.querySelector('#word-box')
   for (let i = 0; i < randomWord.length; i++) {
@@ -30,10 +39,7 @@ const checkLetter = () => {
     //if answer is right empty headertext
     headerText.innerText = ''
     //given input letter, find index of matching letter of randomWord
-    //console.log(randomWord.indexOf(userInputValue))
     //given the index, show letter in the corresponding box index
-    //const letterIndex = randomWord.indexOf(userInputValue)
-    //letterBoxes[letterIndex].innerText = userInputValue
 
     for (let i = 0; i < randomWord.length; i++) {
       if (randomWord[i] === userInputValue) {
