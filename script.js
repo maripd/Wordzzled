@@ -15,7 +15,19 @@ const wordArray = [
   'onomatopoeia',
   'anemone',
   'quinoa',
-  'pharaoh'
+  'pharaoh',
+  'jazz',
+  'buzz',
+  'quiz',
+  'quilt',
+  'afflux',
+  'surreptitious',
+  'Euouae',
+  'interdisciplinary',
+  'winter',
+  'autumn',
+  'ball',
+  'shovel'
 ]
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
 console.log(randomWord)

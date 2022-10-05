@@ -1,3 +1,18 @@
-.background-img-box {
-  background-image: url("https://i.imgur.com/8cueUNh.png");
+.welcome-img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100;
+}
+
+.welcome-contents {
+  display: flex;
+}
+
+#welcome-button {
+  position: absolute;
+  left: 280px;
+  margin: 200px auto;
+  opacity: .4;
+  height: 50px;
+  font-size: x-large;
 }
