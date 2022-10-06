@@ -123,3 +123,17 @@ body {
 #lifecount-box {
   display: flex;
 }
+
+.night-button {
+  margin: auto 0 auto 173px;
+  font-size: 9px;
+  color: rgb(209, 153, 11);
+  font-weight: bold;
+  
+}
+.day-button  {
+  margin: auto 0 auto 10px;
+  font-size: 9px;
+  color: rgb(209, 153, 11);
+  font-weight: bold;
+}
