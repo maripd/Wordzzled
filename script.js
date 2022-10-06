@@ -45,25 +45,25 @@ const createBoxes = () => {
 createBoxes()
 
 const checkLetter = () => {
-  let userInputValue = letterInput.value
+  let userInputValue = letterInput.value.toLowerCase()
   let letterBoxes = document.querySelectorAll('.letter-box')
   let letterIndices = []
 
-  if (randomWord.includes(userInputValue.toLowerCase()) === true) {
+  if (randomWord.includes(userInputValue) === true) {
     //if answer is right empty headertext
     headerText.innerText = ''
     //given input letter, find index of matching letter of randomWord
     //given the index, show letter in the corresponding box index
 
     for (let i = 0; i < randomWord.length; i++) {
-      if (randomWord[i] === userInputValue.toLowerCase()) {
+      if (randomWord[i] === userInputValue) {
         letterBoxes[i].innerText = userInputValue
         userInputArray.push(userInputValue)
         letterInput.value = ''
       }
       if (randomWord.length === userInputArray.length) {
         headerText.innerText = 'You win!'
-        letterInput.value = ''
+        letterInput.disabled = true
       }
     }
   } else {
@@ -73,7 +73,7 @@ const checkLetter = () => {
     console.log('does not exist', userInputValue)
     if (lifeCount < 1) {
       headerText.innerText = 'Game over'
-      letterInput.value = ''
+      letterInput.disabled = true
       for (let i = 0; i < randomWord.length; i++)
         letterBoxes[i].innerText = randomWord[i]
     }
