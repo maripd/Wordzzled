@@ -88,8 +88,12 @@ const playGame = () => {
   location.reload()
 }
 
+const goToHomepage = () => {
+  window.location.href = 'welcome-page.html'
+}
 /////////////////////////////////////////////////////////////Event Listeners
 submitBtn.addEventListener('click', checkLetter)
 playGameBtn.addEventListener('click', playGame)
 //nightBtn.addEventListener('click', clickNightMode)
 //dayBtn.addEventListener('click', clickDayMode)
+headerText.addEventListener('click', goToHomepage)

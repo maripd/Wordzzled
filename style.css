@@ -2,13 +2,13 @@ body {
   background-color: rgb(240, 249, 250);
 }
 
-.dark-mode {
+/* .dark-mode {
   background-color: rgb(22, 14, 12);
   color: white;
 }
 .light-mode {
   background-color: rgb(240, 249, 250);
-}
+} */
 
 .button-input-container {
   display: flex;
