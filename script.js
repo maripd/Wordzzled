@@ -6,7 +6,6 @@ const inputContainer = document.querySelector('.input-container')
 const letterInput = document.querySelector('#letter-input')
 let lifeCountText = document.querySelector('.lifecount')
 const nightBtn = document.querySelector('.night-button')
-const dayBtn = document.querySelector('.day-btn')
 
 let lifeCount = 5
 let userInputArray = []
@@ -88,12 +87,23 @@ const playGame = () => {
   location.reload()
 }
 
+const clickNightMode = () => {
+  const bodyEl = document.body
+  const lifeImg = document.querySelector('.life-img')
+  bodyEl.classList.toggle('night-mode')
+  headerText.classList.toggle('night-mode')
+  letterInput.classList.toggle('night-mode')
+  submitBtn.classList.toggle('night-mode')
+  nightBtn.classList.toggle('night-mode')
+  lifeImg.classList.toggle('night-mode')
+}
+
 const goToHomepage = () => {
   window.location.href = 'welcome-page.html'
 }
 /////////////////////////////////////////////////////////////Event Listeners
 submitBtn.addEventListener('click', checkLetter)
 playGameBtn.addEventListener('click', playGame)
-//nightBtn.addEventListener('click', clickNightMode)
+nightBtn.addEventListener('click', clickNightMode)
 //dayBtn.addEventListener('click', clickDayMode)
 headerText.addEventListener('click', goToHomepage)
