@@ -1,13 +1,15 @@
 /////////////////////////////////////////////////////////// Global Scope
-let lifeCount = 5
-let userInputArray = []
-
 const headerText = document.getElementById('header-text')
 const submitBtn = document.querySelector('#submit-btn')
 const playGameBtn = document.querySelector('#playgame-btn')
 const inputContainer = document.querySelector('.input-container')
 const letterInput = document.querySelector('#letter-input')
 let lifeCountText = document.querySelector('.lifecount')
+const nightBtn = document.querySelector('.night-button')
+const dayBtn = document.querySelector('.day-btn')
+
+let lifeCount = 5
+let userInputArray = []
 headerText.innerText = 'WORDZZLED'
 const wordArray = [
   'wavelength',
@@ -31,6 +33,7 @@ const wordArray = [
   'shovel',
   'hammer'
 ]
+
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
 console.log(randomWord)
 ////////////////////////////////////////////////////////////////// functions
@@ -84,6 +87,9 @@ const checkLetter = () => {
 const playGame = () => {
   location.reload()
 }
+
 /////////////////////////////////////////////////////////////Event Listeners
 submitBtn.addEventListener('click', checkLetter)
 playGameBtn.addEventListener('click', playGame)
+//nightBtn.addEventListener('click', clickNightMode)
+//dayBtn.addEventListener('click', clickDayMode)

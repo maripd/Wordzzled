@@ -1,18 +1,42 @@
-.welcome-img {
-  margin: 0 auto;
-  width: 100%;
-  height: 100;
+body {
+  background-color: rgb(242, 184, 102);
 }
 
 .welcome-contents {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+
+}
 #welcome-button {
-  position: absolute;
-  left: 280px;
-  margin: 200px auto;
-  opacity: .4;
+  margin: 10px auto; 
   height: 50px;
   font-size: x-large;
+  color: rgb(218, 138, 26);
+  border: 3px solid rgb(245, 153, 77);
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(255, 222, 176);
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+#welcome-button:active {
+  background-color: rgb(252, 248, 242);;
+}
+
+#welcome-text {
+  margin: 150px auto 0 auto;
+  font-family: 'Bungee Spice';
+  text-align: center;
+  font-size: 70px;
 }
