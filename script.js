@@ -96,6 +96,7 @@ const clickNightMode = () => {
   submitBtn.classList.toggle('night-mode')
   nightBtn.classList.toggle('night-mode')
   lifeImg.classList.toggle('night-mode')
+  lifeCount.classList.toggle('night-mode')
 }
 
 const goToHomepage = () => {

@@ -1,5 +1,13 @@
 body {
   background-color: rgb(240, 249, 250);
+  max-height: 517px;
+}
+
+main {
+  max-width: 511px;
+  margin: 0 auto;
+  border: 3px solid rgb(21, 81, 142);
+  border-radius: 5px;
 }
 
 .button-input-container {
@@ -67,14 +75,15 @@ body {
 }
 
 #header-text {
-  border: 3px solid rgb(21, 81, 142);
+  /*border: 3px solid rgb(21, 81, 142); */
+  margin: 0 auto;
   width: 100%;
   height: 100px;
   font-family: 'Bungee Spice';
   text-align: center;
   line-height: 2.5em;
   font-size: 40px;
-  background-color: rgb(227, 242, 246);
+  background-color: rgb(203, 236, 245);
   border-radius: 5px;
 }
 
@@ -105,18 +114,20 @@ body {
 .lifecount {
   flex-direction: row-reverse;
   border: 2px solid rgb(237, 136, 47);
-  padding: 10px 10px;
-  margin: 0 10px;
+  padding: 6px 6px;
+  margin: auto 5px;
   border-radius: 4px;
   color:rgb(21, 81, 142);
   font-weight: 800;
 }
 
 #lifecount-box {
+  max-width: 511px;
   display: flex;
 }
 
 .night-button {
+  min-width: ;
   margin: 10px 0 5px 350px;
   font-size: 9px;
   color: rgb(209, 153, 11);
