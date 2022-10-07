@@ -4,7 +4,7 @@
 
 #### By: Marissa Dilig
 
-## [My Github](https://github.com/maripd) | [My Linkedin](https://www.linkedin.com/in/marissa-dilig-6ba71923a/) | [Trello](https://trello.com/b/78Bt7G4o/wordzzled)
+## [My Github](https://github.com/maripd) | [My Linkedin](https://www.linkedin.com/in/marissa-dilig-6ba71923a/) | [Trello](https://trello.com/b/78Bt7G4o/wordzzled) | [Wordzzled](http://mari-wordzzled.surge.sh/wordzzle-game.html)
 
 ![Image 1](https://i.imgur.com/UPLWfr5.png)
 
