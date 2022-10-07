@@ -5,27 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wordzzle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script defer type="text/javascript" src="script.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="welcome-page.css" />
   </head>
 
   <body>
-    <main>
-      <h1 id="header-text"></h1>
-      <div id="word-box"></div>
-      <div class="button-input-container">
-        <input type="text" id="letter-input" placeholder="">
-        <button type="button" id="submit-btn">Enter</button>
+    <div class="welcome-contents">
+      <h1 id="welcome-text">Wordzzle</h1>
+      <div class="button-container">
+     <a href="wordzzle-game.html"><button type="button" id="welcome-button">PLAY GAME</button></a>
       </div>
-      <div id="playgame-container">
-        <button type="button" id="playgame-btn"><img src="icons8-refresh-64.png" class="refresh-img"></button>
-      </div>
-      <div id="lifecount-box">
-        <img src="icons8-life-64.png" class="life-img"/>
-        <p class="lifecount">5</p>
-        <button class="night-button">dark/light mode</button>
-      </div> 
-    </main>
+    </div>
   </body>

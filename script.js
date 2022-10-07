@@ -11,26 +11,26 @@ let lifeCount = 5
 let userInputArray = []
 headerText.innerText = 'WORDZZLED'
 const wordArray = [
-  'wavelength',
-  'epidermal',
-  'aadvark',
-  'onomatopoeia',
-  'anemone',
-  'quinoa',
-  'pharaoh',
-  'jazz',
-  'buzz',
-  'quiz',
-  'quilt',
-  'afflux',
-  'surreptitious',
-  'Euouae',
-  'interdisciplinary',
-  'winter',
-  'autumn',
-  'ball',
-  'shovel',
-  'hammer'
+  'loop',
+  'function',
+  'class',
+  'object',
+  'method',
+  'array',
+  'if',
+  'flexbox',
+  'logic',
+  'switch',
+  'grid',
+  'markdown',
+  'homework',
+  'events',
+  'fork',
+  'clone',
+  'branch',
+  'pull',
+  'command',
+  'directory'
 ]
 
 let randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
@@ -96,15 +96,13 @@ const clickNightMode = () => {
   submitBtn.classList.toggle('night-mode')
   nightBtn.classList.toggle('night-mode')
   lifeImg.classList.toggle('night-mode')
-  lifeCount.classList.toggle('night-mode')
 }
 
 const goToHomepage = () => {
-  window.location.href = 'welcome-page.html'
+  window.location.href = 'index.html'
 }
 /////////////////////////////////////////////////////////////Event Listeners
 submitBtn.addEventListener('click', checkLetter)
 playGameBtn.addEventListener('click', playGame)
 nightBtn.addEventListener('click', clickNightMode)
-//dayBtn.addEventListener('click', clickDayMode)
 headerText.addEventListener('click', goToHomepage)

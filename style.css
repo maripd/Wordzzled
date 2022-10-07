@@ -5,9 +5,10 @@ body {
 
 main {
   max-width: 511px;
-  margin: 0 auto;
+  margin: 200px auto;
   border: 3px solid rgb(21, 81, 142);
   border-radius: 5px;
+  min-width: 360px;
 }
 
 .button-input-container {
@@ -128,7 +129,7 @@ main {
 
 .night-button {
   min-width: ;
-  margin: 10px 0 5px 350px;
+  margin: 10px 0 5px auto;
   font-size: 9px;
   color: rgb(209, 153, 11);
   font-weight: bold;
