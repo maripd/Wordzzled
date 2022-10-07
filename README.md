@@ -6,7 +6,7 @@
 
 ## [My Github](https://github.com/maripd) | [My Linkedin](https://www.linkedin.com/in/marissa-dilig-6ba71923a/) | [Trello](https://trello.com/b/78Bt7G4o/wordzzled)
 
-![Image 1](https://i.imgur.com/rjIrTEo.png)
+![Image 1](https://i.imgur.com/UPLWfr5.png)
 
 ##### **Description**
 
